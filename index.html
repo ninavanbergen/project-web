@@ -1,59 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/same.css">
     <title>Transavia reading</title>
 </head>
 
 <body>
     <header>
-        <a href="index.html"><img src="styles/logo.png" alt="logo"></a>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="index.html"><h1>Read while travelling</h1></a>
-            <a href="login.html">Log in</a>
+            <ul>
+                <li><button><img src="styles/zoekblauw.png" alt="zoek"></button></li>
+                <li>
+                    <a href="index.html"><img src="styles/logo.png" alt="logo"></a>
+                </li>
+                <li>
+                    <a href="login.html"><img src="styles/login.png" alt="login"></a>
+                    <h2 class="dancer">1</h2>
+                </li>
+            </ul>
         </nav>
     </header>
-    
+
     <!-- Filter -->
     <main>
-       <h2>Hoe lang wilt u lezen?</h2>
-        <h2>Welke stijl?</h2>
-        
+        <input type="search" placeholder="Zoek">
         <form>
-        <input type="range">
-        <input type="range">
-        <button>Populair deze maand</button>
-        <button>Reset</button>
+            <fieldset>
+                <label>Leestijd<input type="time"></label>
+            </fieldset>
+               <fieldset>
+                <label>Sfeerkleur<input type="color"></label>
+            </fieldset>
+            <fieldset>
+            <label>Sorteren</label>
+            <select name="sorteren" id="sorteren">
+                <option value="langnaarkort"> Lang naar kort</option>
+                <option value="kortnaarlang"> Kort naar lang</option>
+                <option value="reacties">Meeste reacties</option>
+            </select>
+            </fieldset>
         </form>
-        
-        <p>Kort</p>
-        <p>Lang</p>
-        <p>Humor</p>
-        <p>Serieus</p>
+        <button>Filter ^</button>
     </main>
-    
-    <div>
-        <input type="text" placeholder="zoek">
-    <button type="submit"><img src="styles/zoeklogo.png" alt="zoek"></button>
-    </div>
-    
-    <article>
-        <h2>Stijloefeningen (99) – Verrassing</h2>
-        <p>- ‘Biertje dan maar?’ – ‘Graag.’ – ‘Vermoeiende dag?’ – ‘Nah. Naar de bilbiotheek geweest. Met de bus.’ – ‘Gaat daar een bus naartoe?’ – ‘De bus stopt op het stationsplein.’ – ‘Ah. En vandaar moet je lopen?’ – ‘Ja, ik was met mijn zoon. Die sliep in zijn kinderwagen.’ – ‘Goed zo. Lekker wandelweer?’ […]</p>
-        <a href="verhaal1.html">Lees verder</a>
-    </article>
-    <article>
-        <h2>Stijloefeningen (98) – Beroemd</h2>
-        <p>Vlak voordat ik de bus uitstap bedank ik de buschauffeur via de spiegel voor zijn diensten. Hij zwaait joviaal terug. ‘Mijn vrouw is een groot fan van u’, roept hij. ‘Doe haar de groeten’, zeg ik en stap uit. Centraal Station. Ik duw mijn zoon voort. Hij slaapt. Zich onbewust van de last die er […]</p>
-        <a href="verhaal2.html">Lees verder</a>
-    </article>
-    <article>
-        <h2>Stijloefeningen (97) – Freudiaans</h2>
-        <p>Ik stap uit de lul. Mijn aarsrivaal ligt te slapen in zijn kinderwagen. Wat een kutweer. De mensen zijn met zichzelf bezig, wat er hoogstwaarschijnlijk op neerkomt dat ze aan seks met hun moeder denken. Ik ben op weg naar de Openaarse Bilbiotheek van Amsterdam, om Stijloefeningen te lenen, een boek waarin Raymond Queneau op […]</p>
-        <a href="verhaal3.html">Lees verder</a>
-    </article>
 
-</body>
+   <h2>Stijloefeningen</h2>
+       <img class="hide" src="styles/boek.gif" alt="gif">
+    <section>
+        <article>
+           <button></button>
+            <img src="styles/alzheimer.png" alt="titelalzheimer">
+            <footer>
+                <span>Tijdsduur: 4 min</span>
+            </footer>
+            <p>Ik stap uit, euh… Hoe heet het? Zo’n vervoersdinges op wielen. Van de gemeente. Wit met blauw. Kom. Lijn 12. Of was het 21? Ik weet het niet. Ik stap uit en loop achter een wagentje aan. Van wie is dat wagentje? Ik weet het niet. Ik kijk in het wagentje. Er ligt een ventje […]</p>
+            <a href="verhaal1.html">Lees verder</a>
+        </article>
+        <article>
+           <button></button>
+            <h2>Hongerwinter</h2>
+            <footer>
+                <span>Tijdsduur: 4 min</span>
+            </footer>
+            <p>Mijn voeten en handen heb ik ingezwachteld tegen de kou. Kranten tegen m’n borst. Ik duw een handkar voort waarin mijn zoon vredig ligt te slapen. Centraal Station. De tramrails liggen er kaal bij. […]</p>
+            <a href="verhaal2.html">Lees verder</a>
+        </article>
+        <article>
+           <button></button>
+            <h2>Stijloefeningen (97) – Freudiaans</h2>
+            <footer>
+                <span>Posted on 12 juli 2011 door Molovich</span>
+                <span>Tijdsduur: 4 min</span>
+            </footer>
+            <p>Ik stap uit de lul. Mijn aarsrivaal ligt te slapen in zijn kinderwagen. Wat een kutweer. De mensen zijn met zichzelf bezig, wat er hoogstwaarschijnlijk op neerkomt dat ze aan seks met hun moeder denken. Ik ben op weg naar de Openaarse Bilbiotheek van Amsterdam, om Stijloefeningen te lenen, een boek waarin Raymond Queneau op […]</p>
+            <a href="verhaal3.html">Lees verder</a>
+        </article>
+        <article>
+           <button></button>
+            <h2>Stijloefeningen (97) – Freudiaans</h2>
+            <footer>
+                <span>Posted on 12 juli 2011 door Molovich</span>
+                <span>Tijdsduur: 4 min</span>
+            </footer>
+            <p>Ik stap uit de lul. Mijn aarsrivaal ligt te slapen in zijn kinderwagen. Wat een kutweer. De mensen zijn met zichzelf bezig, wat er hoogstwaarschijnlijk op neerkomt dat ze aan seks met hun moeder denken. Ik ben op weg naar de Openaarse Bilbiotheek van Amsterdam, om Stijloefeningen te lenen, een boek waarin Raymond Queneau op […]</p>
+            <a href="verhaal3.html">Lees verder</a>
+        </article>
+    </section>
+    <script src="js.js"></script>
+</body> 
 </html>

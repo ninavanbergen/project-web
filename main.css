@@ -1,231 +1,276 @@
-* {
-    font-family: "Nexa Light", sans-serif;
-}
-
-header {
-    background: hsla(0,100%,100%,1); 
-    border-radius: 1em;
-    margin-left: 1em;
-    margin-right: 1em;
-}
-
-/* LOGO */
-header img { 
-    float: left; 
-    width: 11em;
-    margin-top: 0.2em;
-    margin-left: 0.5em;
-    margin-right: 4em;
-}
-
-header nav a {
-    font-family: "Nexa Bold";
-    display: inline-block;
-    color: #2c2f86;
-    text-align: center;
-    padding: 0.5em 5em;
-    text-decoration: none; 
-    font-size: 18px;  
-}
-
-header nav a:hover{
-    color: #05cd72; 
-}
-
 body {
-    background-image: url(dominicaanse-republiek.jpg);
-    background-size: 90em;
+    background-image: url(water.jpg);
+    background-size: 100rem;
     background-repeat: no-repeat;  
     background-color: #f4e6d8;
     background-attachment: fixed;
+    background-position: center;
 }
 
-/* FILTER HOMEPAGE */
-main {
-    margin-top: 4em;
-    margin-left: 1em;
-    margin-right: 1em;
-    border-radius: 1em;
-    background: hsla(0,100%,100%,1);
+nav ul li h2 {
+    font-size: 1rem;
+    float: right;
+    margin-top: 1rem;
+    background-color: #e83a6a;
+    border-radius: 5rem;
+    border: none;
+    padding: 0.3rem 0.7rem 0.3rem 0.7rem;
+    color: white;
+    margin-left: -0.5rem;
+    opacity: 0;
+} 
+
+.add {
+    opacity: 1;
+    animation: notification 0.5s forwards;
+    display: block;
 }
 
-main input {
-    width: 35em;
-    margin-left: 2em;
+/* main h2 {
+    margin-left: 70vw;
+    margin-top: 2vw;
+    margin-right: 2vw;
+    background: white;
+    padding: 1rem;
+    position: absolute;
+    border-radius: 1rem;
+    opacity: 0;
+    transition: opacity 2s ease-out; 
 }
 
-main input:first-of-type {
-    margin-right: 8em;
+.login {
+    opacity: 1;
+}*/
+
+main form {
+    display: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    color: white;
 }
 
-main input:nth-of-type(2){
-    margin-right: 2.5em;
+fieldset {
+    text-align: center;
+    border: none; 
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 32%;
+}
+
+fieldset:first-of-type {
+    display: flex;
+    flex-wrap: wrap;
+    background: #32d57d;
+}
+
+fieldset:nth-of-type(2){
+    background: #e83a6a;
+}
+
+fieldset:nth-of-type(3){
+    background: #2c2f86;
+}
+
+fieldset label {
+    font-size: 1.5rem;
+}
+   
+fieldset input, fieldset select {
+    display: block;
+    margin: auto;
+    margin-top: 1.5rem;
+    border: none;
+    font-size: 1rem;
+    text-align: center;
+}
+
+input[type="color"] {
+    width: 50%;
+    background: white;
+}
+
+fieldset select {
+    height: 1.6rem;
+}
+
+fieldset input {
+    width: 50%;
 }
 
 main button {
-    font-family: "Nexa Bold";
-    background: #e83a6a;
-    border-radius: 2em;
+    display: none;
+    float: right;
+    height: 3rem;
+    width: 6rem;
+    font-size: 1.2rem;
+    border-radius: 1.2rem;
+    background-color: #32d57d;
     border: none;
-    font-size: 15px;
-    padding: 0.8em;
     color: white;
-    display: block;
-    display: inline-block;
-    margin-left: 1em;
+    cursor: pointer;
 }
 
-main button:hover {
-     background: #e51c5a;
+body > h2 {
+    font-size: 1.6rem;
+    background: #2c2f86;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
 }
 
-main h2:first-of-type {
-    margin-right: 12.8em;
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-main h2 {
-    font-family: "Nexa Bold";
-    font-size: 20px;
-    color: #2c2f86;
-    margin-top: 1em;
-    margin-left: 1.2em;
-    display: inline-block;
+body > img {
+    width: 20%;
+    height: 20%;
+    display: flex;
+    margin: 2rem auto;
+    opacity: 1;
 }
 
-main p {
-    font-size: 15px;
-    color: #2c2f86;
-    display: inline-block;
-    margin-bottom: 1em;
-    margin-left: 1.7em;
-}
-
-main p:first-of-type {
-    margin-right: 19em;
-}
-
-main p:nth-of-type(2) {
-    margin-right: 6em;
-}
-
-main p:nth-of-type(3) {
-    margin-right: 17.2em;
-}
-
-/* ARTIKELEN */
-
-article:first-of-type {
-    margin-top: 7em;
+.hide {
+    display: none;
+    opacity: 0;
 }
 
 article {
-    background: hsla(0,100%,100%,1);
-    border-radius: 1em;
-    padding: 1em;
-    margin-top: 1em;
-    margin-left: 1em;
-    margin-right: 25em;
+    width: 49%;
+    color: black;
+    padding: 1rem;
+    background: white;
+    border-radius: 1.2rem;
+    margin-bottom: 2%; 
+    z-index: 2;
 }
 
-article a {
-    color: #2c2f86;
-    text-decoration: none; 
-    font-size: 18px;
+section article:first-of-type {
+    background-image:url(ontwerpalzheimer.jpg);
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
 }
 
-article a:hover{
-    color: #05cd72; 
+section article:first-of-type img {
+    margin-top: 1rem;
 }
 
-article h2 {
-    font-family: "Nexa Bold";
-    color: #2c2f86;
+section article:nth-of-type(2) {
+    background-image:url(vroegerachtergrondvv.png);
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 65rem;
 }
 
-article h2:hover {
-    color: #05cd72;
+section article:nth-of-type(2) h2 {
+    font-family: "Trattatello";
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
 }
 
-/* ZOEK */
-div button, body > button {
-    background: #e83a6a;
-    border: none;
-    padding: 1em;
-    border-radius: 1.2em; 
-    margin-top: 2em;
-    margin-right: 1.4em;
-}
-
-div button, body > button:hover {
-    background: #e51c5a;
-}
-
-div {
-    display: block;
+section article a {
+    font-family: "Nexa Light";
+    color: white;
+    text-decoration: none;
+    background: #32d57d;
+    padding: 0.5rem; 
+    border-radius: 0.5rem;
     float: right;
+    margin-top: 1rem;
 }
 
-div input, body > input {
-    font-family: "Nexa Bold";
-    width: 18em;
-    height: 3em;
+article a:hover {
+    background: #05cd72;
+}
+
+article p, footer {
+    margin: 1rem; 
+    line-height: 1.2rem;
+}
+
+article button {
+    background: url(plusje.png) no-repeat top -.5rem center;
+    background-size: cover;
+    float: right;
+    border-radius: 50%;
     border: none;
-    border-radius: 1.2em;
-    padding-top: 1.7em;
-    /* ZOEKBALK NOG NIET PERFECT OP BEIDE HTML*/
+    width: 2.5rem;
+    height: 2.5rem;
 }
 
-body button img, body > button img {
-    width: 2em;
+
+/* MEDIA QUERIES */
+
+@media (max-width: 55rem) {
+    form {
+        height: 30rem;
+        flex-wrap: wrap;
+        opacity: 1;
+        transition: height .3s ease-out, opacity .3s .3s ease-out;
+    }
+    
+    form fieldset {
+        width: 60%;
+        margin: auto;
+    }
+    
+    form fieldset+fieldset {
+        margin-top: 1rem;
+    }
+    
+    main button {
+        display: block;
+        margin-top: 0.5rem;
+        margin-bottom: 1rem; 
+        position: relative;
+        z-index: 1;
+    }
+    
+    .formschuif {
+        opacity: 0;
+        height: 0;
+        transition: height .3s .3s ease-out, opacity .3s ease-out;
+}
 }
 
-/* NU KOMT DE LOGIN.HTML PAGE STYLE */
-
-/* INLOGGEN EN REGISTEREN */
-body > form:first-of-type {
-    background: white;
-    padding: 1.6em;
-    border-radius: 1.2em;
-    display: inline-block;
+@media (max-width: 50rem) {
+    article {
+        width: 100%;
+    }
 }
 
-body > form:nth-of-type(2) {
-    background: white;
-    padding: 0.5em;
-    border-radius: 1.2em;
-    display: block;
+@media (max-width: 40rem) {
+    article {
+        width: 100%;
+    }
+    
+    body {
+        margin-top: 0.5rem;
+    }
+    
+    form fieldset {
+        width: 100%;
+    }
+    
+    form fieldset+fieldset {
+        margin-top: 0.2rem;
+    }
 }
 
-/* ALLE INVUL BALKJES GOED ZETTEN */
-body > form:first-of-type input {
-    display: block;
-    margin-top: 1em; 
-    margin-bottom: 1em;
-    padding: 0.8em;
-    border-radius: 1.2em;
-
+@media (max-width: 26rem){
+    nav ul li h2 {
+        margin-top: -4rem;
+        margin-left: 2.7rem;
+    }
 }
 
-body > form:nth-of-type(2) label {
-    display: block;
-}
-
-body > form:nth-of-type(2) label:nth-of-type(1) input {
-    margin-left: 10em;
-}
-
-body > form:nth-of-type(2) label:nth-of-type(2) input {
-    margin-left: 4.4em;
-}
-
-body > form:nth-of-type(2) label:nth-of-type(3) input {
-    margin-left: 5.6em;
-}
-
-body > form:nth-of-type(2) label:nth-of-type(4) input {
-    margin-left: 10.5em;
-}
-
-body > form:nth-of-type(2) label:nth-of-type(5) input {
-    margin-left: 12.3em;
-}

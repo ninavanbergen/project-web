@@ -1,0 +1,163 @@
+body {
+    background-image: url(water.jpg);
+    background-size: 100rem;
+    background-repeat: no-repeat;
+    background-color: #f4e6d8;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+body>h2 {
+    font-size: 1.5rem;
+    background: #e83a6a;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+    margin-left: 15vw;
+    margin-right: 15vw;
+}
+
+body>form {
+    background-color: rgba(255,255,255,.9);
+    font-size: 1rem;
+    color: black;
+    padding-bottom: 0.8rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    padding-top: 0.5rem;
+}
+
+form fieldset {
+    padding: 1rem;
+    text-align: center;
+    border: none;
+}
+
+form label {
+    font-size: 1.2rem;
+    display: block;
+    margin-left: 0.1rem;
+}
+
+form label input {
+    padding: 0.6rem;
+    width: 10rem;
+    border-radius: 0.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+}
+
+form label:last-of-type input {
+    margin-left: 3.15rem
+}
+
+form h2 {
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+form a {
+    width: 5rem;
+    float: right;
+    margin-top: 1rem;
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+    background: #32d57d;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    margin-right: 33%;
+}
+
+form a:hover {
+    background: #05cd72;
+}
+
+form input:valid {
+    background: lightgreen; 
+}
+
+form label img {
+    display: none;
+    margin-top: 0.5rem;
+}
+
+form input:valid + img{
+    display: flex;
+}
+
+form input:invalid {
+    background-color: lightpink;
+}
+
+form img {
+    float: right;
+    width: 2rem;
+    margin-left: -2rem;
+}
+
+h3 {
+    background: #2c2f86;
+    color: white;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    margin-left: 15vw;
+    margin-right: 15vw;
+}
+
+h3 a {
+    text-decoration: none;
+    color: #e83a6a;
+    font-family: "Nexa Bold";
+}
+
+h3 a:hover {
+    color: #32d57d;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 60rem) {
+    body>form {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+    
+   body>h2, h3 {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+}
+
+@media (max-width: 26.5rem) {
+    body>form, body>h2, body>h3 {
+        margin-left: 12%;
+        margin-right: 12%;
+    }
+    
+    form label:first-of-type {
+        margin-bottom: 2rem;
+    }
+    
+    form h2 {
+        margin-bottom: 0.5rem;
+    }
+    
+    form label input:last-of-type {
+        margin: 0;
+        margin-top: 0.5rem;
+    }
+    
+    form img {
+        margin-top: 0.7rem
+    }
+}

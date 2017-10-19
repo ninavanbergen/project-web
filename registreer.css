@@ -1,0 +1,95 @@
+body {
+    background-image: url(achtergrondsfeer.png);
+    background-size: 110rem;
+    background-repeat: no-repeat;
+    background-color: #f4e6d8;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+body>h2 {
+    font-size: 1.5rem;
+    background: #e83a6a;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+form {
+    background-color: rgba(255,255,255,.9);
+    border-radius: 0.5rem;
+    color: black;
+    font-size: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    align-items: center;
+}
+
+form h2 {
+    line-height: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+form fieldset {
+    text-align: center;
+    border: none;
+}
+
+form label {
+    display: block;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+}
+
+form label input {
+    display: block;
+    width: 75%;
+    margin: 0 auto;
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+}
+
+form a {
+    width: 7rem;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+    background: #32d57d;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+form a:hover {
+    background: #05cd72;
+}
+
+form input:invalid {
+    background: lightpink;
+}
+
+form input:valid {
+    background: lightgreen;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 55rem) {
+    body>form {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+    
+}
