@@ -18,6 +18,8 @@ body>h2 {
     margin-right: 15vw;
 }
 
+/* INLOGGEN */
+
 body>form {
     background-color: rgba(255,255,255,.9);
     font-size: 1rem;
@@ -79,9 +81,13 @@ form a:hover {
     background: #05cd72;
 }
 
+/* ZODRA INVUL GOED IS = BALKJE GROEN */
+
 form input:valid {
     background: lightgreen; 
 }
+
+/* ZODRA INVUL GOED IS VERSCHIJNT ER EEN VINKJE NAAST */
 
 form label img {
     display: none;
@@ -126,7 +132,7 @@ h3 a:hover {
 
 /* MEDIA QUERIES */
 
-@media (max-width: 60rem) {
+@media (max-width: 55rem) {
     body>form {
         margin-left: 0.5rem;
         margin-right: 0.5rem;
@@ -158,6 +164,6 @@ h3 a:hover {
     }
     
     form img {
-        margin-top: 0.7rem
+        margin-top: 0.7rem;
     }
 }

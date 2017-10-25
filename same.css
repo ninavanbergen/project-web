@@ -20,6 +20,9 @@
     padding: 0;
 }
 
+
+/* ANIMATIE */
+
 @keyframes notification {
     0% {
         transform: scale(0);
@@ -32,19 +35,24 @@
     }
 }
 
+
+/* zodat alle elementen rechts en links (en boven) even ver uitlijnen */
+
 body {
     padding-top: 0.5rem;
     padding-left: 15vw;
     padding-right: 15vw;
 }
 
+/* NAV */
+
 header {
     background: white; 
     border-radius: 1rem;
     height: 6rem;
-    /*position: sticky;
+    position: sticky;
     top: 0;
-    z-index: 1;*/
+    z-index: 4;
 }
 
 header ul {
@@ -54,17 +62,31 @@ header ul {
 }
 
 header nav li {
-    font-family: "Nexa Bold";
     list-style: none;
     margin-left: 3vw;
     margin-right: 3vw;
 }
 
+/* NAV IMG */
+
 img[src="styles/zoekblauw.png"] {
     width: 2.8rem; 
 }
 
-/* zoekbalk */
+img[src="styles/logo.png"] {
+    width: 10rem;
+    margin: auto;
+    padding-left: 1rem;
+    margin-top: 0.3rem;
+}
+
+img[src="styles/login.png"] {
+    width: 3.2rem;
+    margin-top: 1.5rem;
+}
+
+/* ZOEKBALK */
+
 header button {
     margin-top: 1.5rem;
     background: none;
@@ -89,18 +111,6 @@ main > input {
     margin-top: 5rem;
 }
 
-img[src="styles/logo.png"] {
-    width: 10rem;
-    margin: auto;
-    padding-left: 1rem;
-    margin-top: 0.3rem;
-}
-
-img[src="styles/login.png"] {
-    width: 3.2rem;
-    margin-top: 1.5rem;
-}
-
 /* MEDIA QUERIES */
 @media (max-width: 50rem) {
     body, header {
@@ -113,10 +123,17 @@ img[src="styles/login.png"] {
     article {
         width: 100%;
     }
-    
-    body, header {
-        padding: 0.5rem 1rem;
+   
+    img[src="styles/zoekblauw.png"] {
+    width: 2.5rem;
+    margin-left: 1.3rem;
     }
+    
+    img[src="styles/logo.png"] {
+    margin-top: 0.1rem;
+    }
+
 }
 
-
+    
+    

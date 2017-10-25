@@ -1,28 +1,46 @@
 html {
-    background-color: #1A1617;
-    background-image: url(Tekengebied%205.png);
-    background-repeat: no-repeat;
+    background-image: url(305656-nature-landscape-winter-forest-Netherlands-snow-trees-cold.jpg);
     background-attachment: fixed;
-    background-position: center;
-    background-size: 90rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* like icon die komt zodra je op het plusje klik */
+
+nav ul li h2 {
+    font-size: 1rem;
+    float: right;
+    margin-top: 1rem;
+    background-color: #e83a6a;
+    border-radius: 5rem;
+    border: none;
+    padding: 0.3rem 0.7rem 0.3rem 0.7rem;
+    color: white;
+    margin-left: -0.5rem;
+    opacity: 0;
+} 
+
+.add {
+    opacity: 1;
+    animation: notification 0.5s forwards;
+    display: block;
 }
 
 article {
-    padding-left: 45%;
-    padding-right: 0;
+    display: flex;
+    flex-direction: column;
 }
 
-article h2, p{
-    font-family: "Trattatello";
-    font-size: 1.6rem;
-    line-height: 2.6rem;
+img[src="styles/hongerwinterdesk.png"] {
+    width: 100%;
+    margin: auto;
 }
 
-article h2 {
-    font-size: 5rem;
-    margin-bottom: 4rem;
-    margin-top: 2rem;
+img[src="styles/hongerwintermobile.png"] {
+    width: 100%;
+    display: none;
 }
+
 
 section {
     margin-top: 5rem;
@@ -31,7 +49,9 @@ section {
     margin-bottom: 1rem;
 }
 
-section button{
+/* like button */
+
+section button {
     float: right;
     align-items: center;
     margin: 1rem;
@@ -46,68 +66,70 @@ section button img {
 
 section fieldset {
     border: none;
+    display: flex;
 }
 
 section form label {
+    margin: auto;
+    text-align: center;
     margin-left: 1rem;
     margin-top: 1rem;
-    display: flex;
     font-size: 1.5rem
 }
 
 section input {
-    border: none;
-    margin-left: 1rem;
+    margin: auto;
     margin-bottom: 2rem;
+    margin-top: 2rem;
     width: 15rem;
     font-size: 1rem;
     padding-top: 0.5rem;
-    padding-left: 0.5rem;
     padding-bottom: 3rem;
 }
 
 section form button {
+    margin: auto;
     font-size: 1rem;
     color: white;
     background: #32d57d;
     padding: 0.5rem; 
     border-radius: 0.5rem;
     border: none;
-    margin: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* plusje voor verhaal toevoegen */
+
+section > button:last-of-type {
+    background: url(plusje.png) no-repeat top -.5rem center;
+    background-size: cover;
+    float: right;
+    border-radius: 50%;
+    border: none;
+    width: 2.5rem;
+    height: 2.5rem;
 }
 
 /* MEDIA QUERIES */
 
-@media (max-width: 50rem) {
-    article {
-    padding-left: 35%;
-    padding-right: 2%;
-}
-}
-
-@media (max-width: 38rem) {
-    article {
-    padding-left: 25%;
-    padding-right: 2%;
-}
-}
 
 @media (max-width: 35rem) {
     section input {
         margin-top: 1rem;
         margin-bottom: 0.5rem;
     }
-    article h2 {
-        font-size: 3.5rem;
-    }
-    article p{
-        font-size: 1.8rem;
-    }
+   img[src="styles/hongerwinterdesk.png"] {
+    display: none;
+}
+    img[src="styles/hongerwintermobile.png"] {
+    width: 100%;
+    display: inline;
+}
 }
 
-@media (max-width: 32rem) {
-    article {
-    padding-left: 18%;
-    padding-right: 2%;
-}
+@media (max-width: 28rem){
+    nav ul li h2 {
+        margin-top: -4rem;
+        margin-left: 2.7rem;
+    }
 }

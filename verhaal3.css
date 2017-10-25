@@ -1,5 +1,8 @@
 html {
-    background-color: black;
+   background-image: url(vtzachtergrond.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /* like icon die komt zodra je op het plusje klik */
@@ -23,17 +26,18 @@ nav ul li h2 {
     display: block;
 }
 
+
 article {
     display: flex;
     flex-direction: column;
 }
 
-img[src="styles/alzheimer2.0.png"] {
+img[src="styles/vtzdesktop.png"] {
     width: 100%;
     margin: auto;
 }
 
-img[src="styles/alzheimermobile.png"] {
+img[src="styles/vtzmobile.png"] {
     width: 100%;
     display: none;
 }
@@ -106,7 +110,6 @@ section > button:last-of-type {
     height: 2.5rem;
 }
 
-
 /* MEDIA QUERIES */
 
 @media (max-width: 35rem) {
@@ -115,10 +118,10 @@ section > button:last-of-type {
         margin-bottom: 0.5rem;
     }
     
-    img[src="styles/alzheimer2.0.png"] {
+    img[src="styles/vtzdesktop.png"] {
     display: none;
 }
-    img[src="styles/alzheimermobile.png"] {
+    img[src="styles/vtzmobile.png"] {
     width: 100%;
     display: inline;
 }
