@@ -47,9 +47,8 @@ section {
 
 /* like button */
 
-section button{
+section > button{
     float: right;
-    align-items: center;
     margin: 1rem;
     border: none;
     background: none;
@@ -60,12 +59,13 @@ section button img {
     height: 3rem;
 }
 
-section fieldset {
+fieldset {
     border: none;
     display: flex;
+    flex-direction: row;
 }
 
-section form label {
+form label {
     margin: auto;
     text-align: center;
     margin-left: 1rem;
@@ -73,17 +73,17 @@ section form label {
     font-size: 1.5rem
 }
 
-section input {
+form input {
     margin: auto;
     margin-bottom: 2rem;
     margin-top: 2rem;
-    width: 15rem;
-    font-size: 1rem;
+    width: 50%;
+    font-size: 1.1rem;
     padding-top: 0.5rem;
     padding-bottom: 3rem;
 }
 
-section form button {
+form button {
     margin: auto;
     font-size: 1rem;
     color: white;
@@ -106,23 +106,48 @@ section > button:last-of-type {
     height: 2.5rem;
 }
 
+/* reacties */
+
+section:last-of-type {
+    background: none;
+}
+
+section article {
+    background: #32d57d;
+    border-radius: 1rem;
+    padding: 1rem;
+    color: white;
+}
+
+section article:first-of-type {
+    margin-bottom: 1rem;
+}
+
+body > h2 {
+    font-size: 1.5rem;
+    font-weight: 100;
+    background: #2c2f86;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+}
+
+article h2 {
+    margin-bottom: 1rem;
+    color: #2c2f86;
+    font-size: 1.3rem;
+}
+
+article p {
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+    margin-left: 6vw;
+    margin-right: 6vw;
+}
 
 /* MEDIA QUERIES */
-
-@media (max-width: 35rem) {
-    section input {
-        margin-top: 1rem;
-        margin-bottom: 0.5rem;
-    }
-    
-    img[src="styles/alzheimer2.0.png"] {
-    display: none;
-}
-    img[src="styles/alzheimermobile.png"] {
-    width: 100%;
-    display: inline;
-}
-}
 
 @media (max-width: 40rem) {
     article > img:last-of-type {
@@ -130,9 +155,56 @@ section > button:last-of-type {
     }
 }
 
+@media (max-width: 35rem) {
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    section > button {
+        margin: auto;
+    }
+    
+    section > button:first-of-type {
+        margin-right: 20vw;
+        margin-top: 1rem;
+    }
+    
+    section > button:last-of-type {
+        margin-left: 20vw; 
+        margin-top: -3rem;
+    }
+    
+    fieldset  {
+        margin-top: 1rem;
+    }
+    
+    section input {
+        width: 90%;
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    img[src="styles/alzheimer2.0.png"] {
+    display: none;
+}
+    
+    img[src="styles/alzheimermobile.png"] {
+    width: 100%;
+    display: inline;
+}
+}
+
 @media (max-width: 28rem){
     nav ul li h2 {
         margin-top: -4rem;
         margin-left: 2.7rem;
+    }
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+    fieldset {
+        width: 100%;
     }
 }

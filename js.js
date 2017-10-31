@@ -91,7 +91,7 @@ document.querySelectorAll("section>button:last-of-type").forEach(function (butto
 
 /* hier heb ik de variabele like gemaakt en daarin selecteer ik het bepaalde element. via een if statement selecteer ik like en geef ik het een click event. Zodra er op het element wordt geklikt activeert er een function. die function wordt ter plekke gemaakt, daarin heb ik de variabele img gemaakt, daarin selecteer ik de image dmv this. daarna heb ik een if/else statement gemaakt. in de if statement zeg ik dat als de img 'leeg' includes, dat ik de image moet veranderen naar een andere image. Ook krijgt het een animation mee die ik in css heb gemaakt. zodra het niet het geval is blijft de image hetzelfde en wordt style verwijderd. */
 
-const like = select("article:first-of-type+section button");
+const like = select("section:first-of-type>button");
 if (like) {
     like.addEventListener("click", function(){
         const img = this.children[0];
@@ -104,7 +104,6 @@ if (like) {
         }
     });
 }
-
 
 /*// 1. selecteer elementen met document.querySelector 
 var section = document.querySelector('.dancer'); // first section element

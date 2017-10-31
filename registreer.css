@@ -9,11 +9,12 @@ body {
 
 body>h2 {
     font-size: 1.5rem;
+    font-weight: 100;
     background: #e83a6a;
     color: white;
     padding: 0.5rem;
     border-radius: 0.5rem;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     margin-left: 15vw;
     margin-right: 15vw;
 }
@@ -37,6 +38,8 @@ form {
 form h2 {
     line-height: 2rem;
     margin-bottom: 0.5rem;
+    font-weight: 100;
+    font-size: 1.2rem;
 }
 
 form fieldset {

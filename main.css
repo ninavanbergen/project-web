@@ -105,7 +105,8 @@ main button {
 }
 
 body > h2 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
+    font-weight: 100;
     background: #2c2f86;
     color: white;
     padding: 0.5rem;
@@ -235,25 +236,28 @@ article button {
 
 @media (max-width: 55rem) {
     form {
-        height: 30rem;
+        height: 20rem;
         flex-wrap: wrap;
         opacity: 1;
         transition: height .3s ease-out, opacity .3s .3s ease-out;
     }
     
     form fieldset {
-        width: 60%;
+        width: 55%;
+        height: 20%;
         margin: auto;
+        justify-content: center;
+        padding-bottom: 5rem;
     }
     
-    form fieldset+fieldset {
-        margin-top: 1rem;
+    form fieldset:nth-of-type(2) {
     }
     
+    form fieldset:nth-of-type(3) {
+    }
+     
     main button {
         display: block;
-        margin-top: 0.5rem;
-        margin-bottom: 1rem; 
         position: relative;
         z-index: 1;
     }
@@ -286,11 +290,7 @@ article button {
     }
     
     form fieldset {
-        width: 100%;
-    }
-    
-    form fieldset+fieldset {
-        margin-top: 0.2rem;
+        width: 70%;
     }
 }
 
